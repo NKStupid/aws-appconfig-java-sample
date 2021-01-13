@@ -251,9 +251,9 @@ Resources:
       ListenerArn:
         !Ref PublicLoadBalancerListener
       Priority: !Ref 'Priority'
-Outputs:
-  ExternalUrl:
-    Description: The url of the external load balancer
-    Value: !Sub http://${PublicLoadBalancer.DNSName}
-    Export:
-      Name: !Sub AppConfigBlog:${EnvironmentName}:ExternalUrl
+# Outputs:
+#   ExternalUrl:
+#     Description: The url of the external load balancer
+#     Value: !Sub http://${PublicLoadBalancer.DNSName}
+#     Export:
+#       Name: !Sub AppConfigBlog:${EnvironmentName}:ExternalUrl
