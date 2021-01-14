@@ -183,9 +183,9 @@ Resources:
             - Name: AWS_MAIL_SERVER_HOST
               Value: email-smtp.us-east-1.amazonaws.com
             - Name: AWS_MAIL_SERVER_USERNAME
-              Value: AKIAUB2BKMJ4JYM7PW5K
+              Value: AKIAUB2BKMJ4N3K3O7LU
             - Name: AWS_MAIL_SERVER_PASSWORD
-              Value: 7HcG0h5/qkuclt5G3LRVICQbvVWJV9Mv5+e579vQ
+              Value: BFbtBiW+WTvVisqMAsx3GQRRUjiX5aI+yRk4Iq9b0Nqn 
             - Name: AWS_MAIL_SERVER_FROM_ADDRESS
               Value: joseph.siyi@gmail.com
           PortMappings:
