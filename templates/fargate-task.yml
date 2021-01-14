@@ -180,14 +180,14 @@ Resources:
           Memory: !Ref 'ContainerMemory'
           Image: !Ref 'ImageUrl'
           Environment:
-            -   Name: AWS_MAIL_SERVER_HOST
-                Value: email-smtp.us-east-1.amazonaws.com
-            -   Name: AWS_MAIL_SERVER_USERNAME
-                Value: AKIAUB2BKMJ4JYM7PW5K
-            -   Name: AWS_MAIL_SERVER_PASSWORD
-                Value: 7HcG0h5/qkuclt5G3LRVICQbvVWJV9Mv5+e579vQ
-            -   Name: AWS_MAIL_SERVER_FROM_ADDRESS
-                Value: joseph.siyi@gmail.com
+            - Name: AWS_MAIL_SERVER_HOST
+              Value: email-smtp.us-east-1.amazonaws.com
+            - Name: AWS_MAIL_SERVER_USERNAME
+              Value: AKIAUB2BKMJ4JYM7PW5K
+            - Name: AWS_MAIL_SERVER_PASSWORD
+              Value: 7HcG0h5/qkuclt5G3LRVICQbvVWJV9Mv5+e579vQ
+            - Name: AWS_MAIL_SERVER_FROM_ADDRESS
+              Value: joseph.siyi@gmail.com
           PortMappings:
             - ContainerPort: !Ref 'ContainerPort'
           LogConfiguration:
