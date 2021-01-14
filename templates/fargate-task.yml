@@ -69,7 +69,7 @@ Parameters:
       traffic to this service.
   HealthCheckPath:
     Type: String
-    Default: "/movies/getMovies"
+    Default: "/notification/health-status"
     Description: A Valid path on the service which the Healthcheck will ping to get a valid 200 Response    
   Priority:
     Type: Number
