@@ -248,7 +248,9 @@ Resources:
       Actions:
         - TargetGroupArn: !Ref 'TargetGroup'
           Type: 'forward'
-      Conditions: "*"
+      Conditions:
+        - Field: path-pattern
+          Values: [!Ref 'Path']
       ListenerArn:
         !Ref PublicLoadBalancerListener
       Priority: !Ref 'Priority'
