@@ -248,7 +248,7 @@ Resources:
       Actions:
         - TargetGroupArn: !Ref 'TargetGroup'
           Type: 'forward'
-      Conditions: *
+      Conditions: "*"
       ListenerArn:
         !Ref PublicLoadBalancerListener
       Priority: !Ref 'Priority'
