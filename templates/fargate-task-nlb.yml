@@ -138,7 +138,6 @@ Resources:
       HealthCheckIntervalSeconds: 10
       HealthCheckPath: /
       HealthCheckProtocol: TCP
-      HealthCheckTimeoutSeconds: 5
       HealthyThresholdCount: 2
       Port: 80
       Protocol: TCP
@@ -237,7 +236,6 @@ Resources:
     Properties:
       HealthCheckIntervalSeconds: 30
       HealthCheckProtocol: TCP
-      HealthCheckTimeoutSeconds: 30
       HealthyThresholdCount: 2
       TargetType: ip
       Name: !Ref 'ServiceName'
