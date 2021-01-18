@@ -135,7 +135,7 @@ Resources:
   DummyTargetGroupPublic:
     Type: AWS::ElasticLoadBalancingV2::TargetGroup
     Properties:
-      HealthCheckIntervalSeconds: 6
+      HealthCheckIntervalSeconds: 10
       HealthCheckPath: /
       HealthCheckProtocol: TCP
       HealthCheckTimeoutSeconds: 5
@@ -153,7 +153,7 @@ Resources:
           Type: 'forward'
       LoadBalancerArn: !Ref 'PublicLoadBalancer'
       Port: 80
-      Protocol: HTTP
+      Protocol: TCP
   # A log group for storing the stdout logs from this service's containers
   LogGroup:
     Type: AWS::Logs::LogGroup
@@ -235,7 +235,7 @@ Resources:
   TargetGroup:
     Type: AWS::ElasticLoadBalancingV2::TargetGroup
     Properties:
-      HealthCheckIntervalSeconds: 40
+      HealthCheckIntervalSeconds: 30
       HealthCheckPath: !Ref 'HealthCheckPath'
       HealthCheckProtocol: TCP
       HealthCheckTimeoutSeconds: 30
