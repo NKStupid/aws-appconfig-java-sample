@@ -118,9 +118,6 @@ Resources:
     Properties:
       Scheme: internet-facing
       Type: network
-      LoadBalancerAttributes:
-        - Key: idle_timeout.timeout_seconds
-          Value: '30'
       Subnets:
         # The load balancer is placed into the public subnets, so that traffic
         # from the internet can reach the load balancer directly via the internet gateway
