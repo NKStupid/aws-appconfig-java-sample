@@ -247,9 +247,9 @@ Resources:
       VpcId:
         Fn::ImportValue: !Sub AppConfigBlog:${EnvironmentName}:VpcId
 
-# Outputs:
-#   ExternalUrl:
-#     Description: The url of the external load balancer
-#     Value: !Sub http://${PublicLoadBalancer.DNSName}
+Outputs:
+  ExternalUrl:
+    Description: The url of the external load balancer
+    Value: !Sub http://${PublicLoadBalancer.DNSName}
 #     Export:
 #       Name: !Sub AppConfigBlog:${EnvironmentName}:ExternalUrl
